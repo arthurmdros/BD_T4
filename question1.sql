@@ -1,0 +1,7 @@
+DROP DATABASE if EXISTS EquipeDB;
+
+CREATE DATABASE EquipeDB 
+CHARACTER SET = UTF8 
+COLLATE = utf8_general_ci;
+
+USE EquipeDB;
