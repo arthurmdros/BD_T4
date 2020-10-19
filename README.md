@@ -1,15 +1,19 @@
-# BD_T4
+# Banco de dados II - Tarefa 4
 
 
 Considere o banco de dados EquipeBD abaixo para responder às questões:
-Funcionario (codigo, nome, sexo, dataNasc, salario, supervisor, depto)
-Departamento (codigo, sigla, descricao, gerente)
-Equipe(codigo, nomeEquipe)
-Membro(codigo, codEquipe, codFuncionario)
-Projeto (codigo, descricao, depto, responsavel, dataInicio, dataFim, situacao, dataConclusao, equipe) 
-Atividade (codigo, descricao, dataInicio, dataFim, situacao, dataConclusao)
-AtividadeMembro(codAtividade, codMembro)
-AtividadeProjeto (codAtividade, codProjeto)
+
+Tabela | Atributos
+---------------- | ----------------------------------------------
+Atividade        | codigo, descricao, dataInicio, dataFim, situacao, dataConclusao
+Funcionario      | codigo, nome, sexo, dataNasc, salario, supervisor, depto
+Departamento     | codigo, sigla, descricao, gerente
+Projeto          | codigo, descricao, depto, responsavel, dataInicio, dataFim, situacao, dataConclusao, equipe
+AtividadeProjeto | codAtividade, codProjeto
+Equipe           | codigo, nomeEquipe
+Membro           | codigo, codEquipe, codFuncionario
+AtividadeMembro  | codAtividade, codMembro
+
 
 Situação pode ser: Planejado, Em andamento, Concluído.
 Script de criação: https://github.com/tacianosilva/bsi-tasks/tree/master/bd/scripts/EquipesBD 
