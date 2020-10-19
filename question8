@@ -1,0 +1,13 @@
+Os índices são utilizados nas consultas com o propósito de auxiliar a encontrar registros
+com um valor específico em uma coluna, ou seja, ele é utilizado para aumentar o desempenho
+da execução de consultas. No MySQL as buscas que não possuem índices empregados são realizadas
+iniciando no primeiro registro e percorrem toda a tabela até encontrar os registros relevantes da consulta.
+
+Nos SGBD os índices devem ser criados, idealmente, nos campos que são utilizados em cláusulas WHERE e 
+também nos JOINS das consultas. Os índices são implementados da seguinte forma no MySQL:
+
+CREATE [UNIQUE] INDEX nome_do_indice
+ON nome_da_tabela (
+	coluna1 [ASC | DESC],
+	[coluna2 [ASC | DESC]] ...
+);
