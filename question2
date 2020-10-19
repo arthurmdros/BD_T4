@@ -1,0 +1,6 @@
+As codificações de caracteres são definidas de acordo com as características de cada idioma. Em banco de dados
+são utilizados os "character sets" para definir a codificação que será utilizada. As collations definem as regras
+de comparacação entre os caracteres do charset como letras minúsculas e maiúsculas, ou acentuação. Por exemplo, caso
+seja realizada uma consulta com a palavra "teste" na coluna de uma tabela e a collation que esteja sendo utilizada
+for "latin1_general_ci" o SGBD (MySQL) poderá retornar as palavaras "TESTE, "Teste", etc, pois não há diferenças nas letras
+maiúsculas entre as minúsculas e isso vem da terminação "ci" que indica "case-insensitive".
